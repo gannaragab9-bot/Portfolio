@@ -95,21 +95,21 @@ body {
     color: #38bdf8;
 }
 
-/* Large Hero Image Card */
+/* Hero Image Card (حجم متوسط ومظبوط) */
 .hero-image-container {
     position: relative;
-    width: 100%;
-    height: 420px;
+    width: 280px;         /* تصغير عرض الكارت */
+    height: 320px;        /* تصغير ارتفاع الكارت */
+    justify-self: center; /* تجميع الصورة في المنتصف */
 }
 
 .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 16px;
     border: 1px solid #334155;
 }
-
 /* Floating GPA Badge */
 .floating-badge {
     position: absolute;
