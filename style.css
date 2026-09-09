@@ -12,57 +12,134 @@ body {
     line-height: 1.6;
 }
 
-/* Header Wide & Profile Image */
-.header-section {
+/* Hero Layout (Matching Reference) */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
     background: #161e2e;
     border: 1px solid #243044;
-    border-radius: 12px;
-    padding: 35px;
-    margin-bottom: 30px;
+    border-radius: 24px;
+    padding: 50px;
+    margin-bottom: 40px;
 }
 
-.profile-header {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 25px;
+.brand-tag {
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
-.profile-img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #38bdf8;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-    flex-shrink: 0;
-}
-
-.header-section h1 {
-    font-size: 2.2rem;
+.hero-title {
+    font-size: 3.8rem;
+    line-height: 1.05;
     color: #f8fafc;
-    margin-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-title .highlight {
+    color: #38bdf8;
 }
 
 .subtitle {
-    color: #38bdf8;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #cbd5e1;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .bio {
     color: #94a3b8;
-    font-size: 0.95rem;
-    max-width: 900px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
-.quick-details {
+/* Buttons */
+.hero-buttons {
     display: flex;
-    gap: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #243044;
-    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: #f8fafc;
+    color: #0b0f19;
+}
+
+.btn-primary:hover {
+    background: #38bdf8;
+    color: #0b0f19;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #f8fafc;
+    border: 1px solid #334155;
+}
+
+.btn-secondary:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+/* Large Hero Image Card */
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+/* Floating GPA Badge */
+.floating-badge {
+    position: absolute;
+    bottom: -15px;
+    left: -20px;
+    background: #0b0f19;
+    border: 1px solid #243044;
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.floating-badge .label {
+    display: block;
+    font-size: 0.65rem;
+    color: #38bdf8;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.floating-badge strong {
+    font-size: 1.8rem;
+    color: #f8fafc;
+    display: block;
+    line-height: 1.1;
+}
+
+.floating-badge small {
+    font-size: 0.75rem;
+    color: #94a3b8;
 }
 
 .quick-details span {
