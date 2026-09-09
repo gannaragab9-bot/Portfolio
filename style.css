@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Hero Layout (Matching Reference) */
+/* Hero Section */
 .hero-section {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -56,51 +56,14 @@ body {
     color: #94a3b8;
     font-size: 0.98rem;
     line-height: 1.7;
-    margin-bottom: 30px;
 }
 
-/* Buttons */
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn {
-    padding: 12px 24px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: 0.2s ease;
-}
-
-.btn-primary {
-    background: #f8fafc;
-    color: #0b0f19;
-}
-
-.btn-primary:hover {
-    background: #38bdf8;
-    color: #0b0f19;
-}
-
-.btn-secondary {
-    background: transparent;
-    color: #f8fafc;
-    border: 1px solid #334155;
-}
-
-.btn-secondary:hover {
-    border-color: #38bdf8;
-    color: #38bdf8;
-}
-
-/* Hero Image Card (حجم متوسط ومظبوط) */
+/* Hero Image Card */
 .hero-image-container {
     position: relative;
-    width: 280px;         /* تصغير عرض الكارت */
-    height: 320px;        /* تصغير ارتفاع الكارت */
-    justify-self: center; /* تجميع الصورة في المنتصف */
+    width: 280px;
+    height: 320px;
+    justify-self: center;
 }
 
 .hero-img {
@@ -110,6 +73,7 @@ body {
     border-radius: 16px;
     border: 1px solid #334155;
 }
+
 /* Floating GPA Badge */
 .floating-badge {
     position: absolute;
@@ -140,18 +104,6 @@ body {
 .floating-badge small {
     font-size: 0.75rem;
     color: #94a3b8;
-}
-
-.quick-details span {
-    display: block;
-    font-size: 0.8rem;
-    color: #94a3b8;
-    text-transform: uppercase;
-}
-
-.quick-details strong {
-    font-size: 1rem;
-    color: #38bdf8;
 }
 
 /* Main Container */
@@ -390,12 +342,12 @@ body {
     color: #0b0f19;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 20px 4%;
+@media (max-width: 900px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 30px;
     }
-    .profile-header {
-        flex-direction: column;
-        align-items: flex-start;
+    .hero-image-container {
+        height: 300px;
     }
 }
