@@ -263,6 +263,29 @@ body {
     font-size: 0.85rem;
 }
 
+/* Service Meta (Timeline & Budget) */
+.service-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #243044;
+}
+
+.meta-item {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.meta-item.budget {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
 /* Projects Wide List */
 .projects-list {
     display: flex;
