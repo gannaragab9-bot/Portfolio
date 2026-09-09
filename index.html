@@ -3,60 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganna Mohamed - Web & Software Developer</title>
+    <title>Ganna Mohamed - Software & Web Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="bg-glow"></div>
+
     <div class="container">
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
-            <div class="brand">GANNA MOHAMED</div>
+            <div class="profile-card">
+                <div class="avatar-box">
+                    <img src="ganna.jpg" alt="Ganna Mohamed">
+                </div>
+                <h2>جنا محمد</h2>
+                <p class="role">Software & Web Developer</p>
+                <div class="status-badge">
+                    <span class="dot"></span> Open for Freelance
+                </div>
+            </div>
+
             <nav class="nav-menu">
-                <ul>
-                    <li><span class="num">00</span> Cover</li>
-                    <li><span class="num">01</span> About</li>
-                    <li><span class="num">02</span> Education</li>
-                    <li><span class="num">03</span> Skills</li>
-                    <li><span class="num">04</span> Training</li>
-                    <li><span class="num">05</span> Services</li>
-                    <li><span class="num">06</span> Projects</li>
-                    <li><span class="num">07</span> Contact</li>
-                </ul>
+                <a href="#about" class="nav-item active"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#services" class="nav-item"><i class="fa-solid fa-layer-group"></i> Services</a>
+                <a href="#projects" class="nav-item"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contact</a>
             </nav>
         </aside>
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <div class="hero-section">
-                <div class="hero-text">
-                    <p class="subtitle">Software & Web Development</p>
-                    <h1 class="name">Ganna<br>Mohamed</h1>
-                    <p class="description">
-                        Building functional, scalable web solutions & dynamic applications — from backend logic and databases to interactive frontends. Currently deep in software development and practical project architecture.
-                    </p>
+            <!-- Header Banner -->
+            <section id="about" class="hero-card">
+                <span class="tag">NTI Summer Training Program</span>
+                <h1>Developing Smart, Scalable & Dynamic Web Solutions</h1>
+                <p class="bio">
+                    I transform complex business ideas into seamless digital platforms. Specializing in full-stack web development using Python, Flask, and database management systems, I build fast, secure, and user-centric web applications.
+                </p>
+                <div class="quick-stats">
+                    <div class="stat">
+                        <h3>ID</h3>
+                        <p>322672</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Specialization</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Location</h3>
+                        <p>Egypt</p>
+                    </div>
+                </div>
+            </section>
 
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="label">Focus</span>
-                            <span class="value">Web Development & Software Engineering</span>
+            <!-- Technical Skills -->
+            <section id="skills" class="section-card">
+                <h2><i class="fa-solid fa-gears"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-tag"><i class="fa-solid fa-pepper-hot"></i> Flask</div>
+                    <div class="skill-tag"><i class="fa-solid fa-database"></i> SQL / MySQL</div>
+                    <div class="skill-tag"><i class="fa-solid fa-link"></i> SQLAlchemy</div>
+                    <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</div>
+                    <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+                    <div class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</div>
+                </div>
+            </section>
+
+            <!-- Services Offered -->
+            <section id="services" class="section-card">
+                <h2><i class="fa-solid fa-briefcase"></i> Services Offered</h2>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <i class="fa-solid fa-globe icon"></i>
+                        <h3>Full-Stack Web Apps</h3>
+                        <p>Building customized web solutions with responsive user interfaces and robust Python/Flask backends.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa-solid fa-database icon"></i>
+                        <h3>Database Design</h3>
+                        <p>Structuring relational databases with MySQL & SQLAlchemy for fast, secure data storage.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa-solid fa-sliders icon"></i>
+                        <h3>Business Automation</h3>
+                        <p>Creating dynamic ordering systems and administration dashboards to streamline daily operations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section id="projects" class="section-card">
+                <h2><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-box">
+                        <div class="project-header">
+                            <span class="project-type">Full-Stack App</span>
+                            <i class="fa-solid fa-utensils"></i>
                         </div>
-                        <div class="info-item">
-                            <span class="label">Based in</span>
-                            <span class="value">Egypt</span>
+                        <h3>Happy Food System</h3>
+                        <p>Interactive restaurant order system and admin web app built with Python, Flask, and SQLAlchemy.</p>
+                        <div class="project-tech">
+                            <span>Python</span> <span>Flask</span> <span>MySQL</span>
                         </div>
-                        <div class="info-item">
-                            <span class="label">Status</span>
-                            <span class="value">Open to freelance & collaborations</span>
+                    </div>
+
+                    <div class="project-box">
+                        <div class="project-header">
+                            <span class="project-type">Python Project</span>
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3>Rule-Based AI Chatbot</h3>
+                        <p>Interactive command-line automation script designed with clean procedural Python architecture.</p>
+                        <div class="project-tech">
+                            <span>Python</span> <span>CLI</span> <span>Git</span>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="hero-image-container">
-                    <img src="garna.jpg" alt="Ganna Mohamed" class="hero-image">
-                    <div class="image-badge">G. MOHAMED - 2026</div>
+            <!-- Contact Section -->
+            <section id="contact" class="section-card">
+                <h2><i class="fa-solid fa-address-book"></i> Connect With Me</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/gannaragab9-bot" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:ganna@example.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email</a>
                 </div>
-            </div>
+            </section>
         </main>
     </div>
 </body>
